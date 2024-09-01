@@ -1,0 +1,37 @@
+<div class="row mt-5">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <!-- <label for="video-upload">Choose video to upload:</label>
+        <input type="file" id="video-upload" name="video-upload" accept=".mp4,.MP4,.mov,.MOV,.avi,.AVI" /> -->
+
+        <form [formGroup]="videoFormGroup" (ngSubmit)="onUpload()">
+            <div class="form-group">
+                <!-- Video file -->
+                <label for="video-upload">Choose video to upload:</label>
+                <input type="file" class="form-control" id="video-upload" formControlName="videoFile" name="video-upload" accept=".mp4,.MP4,.mov,.MOV,.avi,.AVI" (input)="onVideoSelect($event)"/>
+            </div>
+            <ng-container *ngIf="isVideoFileValid()">
+                <div class="form-group mt-2">
+                    <!-- Video title -->
+                    <label for="video-title">Title: </label>
+                    <input id="video-title" class="form-control" type="text" formControlName="videoTitle">
+                </div>
+                <div class="form-group mt-2">
+                    <!-- Video description -->
+                    <label for="video-description">Description: </label>
+                    <input class="form-control" id="video-description" type="text" formControlName="videoDescription">
+                </div>
+                <div class="form-group mt-2">
+                    <!-- Video category -->
+                    <label for="video-category">Category: </label>
+                    <input id="video-category" class="form-control" type="text" formControlName="videoCategory">
+                </div>
+            </ng-container>
+
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>

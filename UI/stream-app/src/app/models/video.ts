@@ -7,5 +7,6 @@ export interface Video {
     title: string;
     description: string;
     videoUrl: string;
+    videoFile?: File;
     videoCategory: VideoCategory;
 }

@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\StreamService.csproj": {}
+  },
+  "projects": {
+    "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\StreamService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\StreamService.csproj",
+        "projectName": "StreamService",
+        "projectPath": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\StreamService.csproj",
+        "packagesPath": "C:\\Users\\ralph9576\\.nuget\\packages\\",
+        "outputPath": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ralph9576\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/wtwdst/WTW.TandR.ProjectEx/_packaging/WTW.EX.Nugets/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/wtwdst/_packaging/vsts-devops-nuget-dev/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

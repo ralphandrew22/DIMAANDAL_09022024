@@ -58,9 +58,9 @@ export class VideoService {
         return of(this.mockVideos);
     }
 
-    // constructor(private httpClient: HttpClient) {
+    constructor(private httpClient: HttpClient) {
 
-    // }
+    }
 
     getAllVideos(): Observable<Video[]> {
         return this.mockGetAllVideosResponse();

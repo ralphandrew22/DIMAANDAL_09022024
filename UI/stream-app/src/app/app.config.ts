@@ -2,22 +2,23 @@ import { ApplicationConfig, EnvironmentProviders, importProvidersFrom, provideZo
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http';
 
 const environmentProviders: EnvironmentProviders[] = [
+  provideHttpClient(),
   importProvidersFrom([
     FormsModule,
     CommonModule,
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ]),
   provideZoneChangeDetection({ eventCoalescing: true }),
   provideRouter(routes),
-  provideHttpClient()
 ];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
+  providers: environmentProviders
 };
