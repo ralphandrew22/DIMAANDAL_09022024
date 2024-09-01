@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <div *ngFor="let video of videos">
+            <div class="row" (click)="navigateToVideo(video.id)">
+                <div class="col-6 align-self-center">
+                    <video title="{{video.title}}" width="256" height="256">
+                        <source src="{{video.videoUrl}}">
+                      Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-4 align-self-center">
+                    <h3>{{video.title}}</h3>
+                    <p>{{video.description}}</p>
+                    <p>Category: {{video.videoCategory.category}}</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-2"></div>
+</div>
