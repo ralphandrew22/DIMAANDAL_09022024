@@ -3,10 +3,11 @@ export interface VideoCategory {
 }
 
 export interface Video {
-    id: number;
+    id?: number;
     title: string;
     description: string;
-    videoUrl: string;
+    videoFileUrl?: string;
     videoFile?: File;
+    file?: File;
     videoCategory: VideoCategory;
 }

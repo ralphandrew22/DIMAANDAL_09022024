@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Video } from '../../models/video';
 import { CommonModule } from '@angular/common';
-import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { Validators } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { VideoService } from '../../services/video.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-upload',
@@ -12,68 +13,59 @@ import { Validators } from '@angular/forms';
   styleUrl: './upload.component.scss'
 })
 export class UploadComponent implements OnInit {
-
-  // videoForm = new FormGroup({
-  //   videoTitle: new FormControl(''),
-  //   videoDescription: new FormControl(''),
-  //   videoCategory: new FormControl('')
-  // });
-
-  videoFormGroup = this.formBuilder.group({
-    videoFile: [null, { updateOn: 'blur', validators: [Validators.required] }],
-    videoTitle: ['', { updateOn: 'blur', validators: [Validators.required] }],
-    videoDescription: ['', { updateOn: 'blur', validators: [Validators.required] }],
-    videoCategory: ['', { updateOn: 'blur', validators: [Validators.required] }]
-  });
-
   video: Video = {
     id: 0,
     title: '',
     description: '',
-    videoUrl: '',
+    videoFileUrl: '',
     videoFile: undefined,
     videoCategory: {
       category: ''
     }
   };
 
-  constructor(private formBuilder: FormBuilder) {
-
-  }
+  constructor(private router: Router, private videoService: VideoService) { }
   
-  ngOnInit(): void {
-      
-  }
+  ngOnInit(): void { }
 
   onVideoSelect(event: Event) {
     const files = (event?.target as HTMLInputElement)?.files;
     if (files) {
       const videoFile: File = files[0];
       if ((videoFile.size / 1024 / 1024) > 100) {
-        // error for more than 100MB video
-        this.videoFormGroup.controls['videoFile'].setErrors({ error: 'Video exceeds max limit of 100MB' });
         return;
       }
 
       const videoExtension = videoFile.name.toLowerCase().split('.').pop()!;
       if (!['mp4', 'mov', 'avi'].includes(videoExtension)) {
-        this.videoFormGroup.controls['videoFile'].setErrors({ error: 'Unsupported video format.' });
         return;
       }
-      this.video.videoFile = videoFile;
-      // event.target['value'] = null;
+      this.video.file = videoFile;
+      this.video.videoFileUrl = videoFile.name;
     }
   }
 
-  isVideoFileTouchedOrDirty(): boolean {
-    return this.videoFormGroup.get('videoFile')?.touched || this.videoFormGroup.get('videoFile')?.dirty
+  isVideoFileValid(): boolean {
+    return !!this.video.file;
   }
 
-  isVideoFileValid(): boolean {
-    return !!this.video.videoFile;
+  updateTitle($event) {
+    this.video.title = $event.srcElement.value;
+  }
+
+  updateDescription($event) {
+    this.video.description = $event.srcElement.value;
+  }
+
+  updateCategory($event) {
+    this.video.videoCategory.category = $event.srcElement.value;
   }
 
   onUpload() {
-
+    this.videoService.uploadVideo(this.video).subscribe(
+      uploadedVideoId => {
+        this.router.navigate(['../videos', uploadedVideoId]);
+      }
+    );
   }
 }

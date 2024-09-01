@@ -1,7 +1,64 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}|StreamService\\StreamService.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice\\controllers\\streamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}|StreamService\\StreamService.csproj|solutionrelative:streamservice\\controllers\\streamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}|StreamService\\StreamService.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}|StreamService\\StreamService.csproj|solutionrelative:streamservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11044261-1B5F-4B7B-9F42-49500D3F0381}|StreamService.Repository\\StreamService.Repository.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice.repository\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11044261-1B5F-4B7B-9F42-49500D3F0381}|StreamService.Repository\\StreamService.Repository.csproj|solutionrelative:streamservice.repository\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11044261-1B5F-4B7B-9F42-49500D3F0381}|StreamService.Repository\\StreamService.Repository.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice.repository\\servicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11044261-1B5F-4B7B-9F42-49500D3F0381}|StreamService.Repository\\StreamService.Repository.csproj|solutionrelative:streamservice.repository\\servicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9634C7A-E925-4E94-A80E-C24A328E6012}|StreamService.Entities\\StreamService.Entities.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice.entities\\videofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9634C7A-E925-4E94-A80E-C24A328E6012}|StreamService.Entities\\StreamService.Entities.csproj|solutionrelative:streamservice.entities\\videofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9634C7A-E925-4E94-A80E-C24A328E6012}|StreamService.Entities\\StreamService.Entities.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice.entities\\videocategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9634C7A-E925-4E94-A80E-C24A328E6012}|StreamService.Entities\\StreamService.Entities.csproj|solutionrelative:streamservice.entities\\videocategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25DBDE8-0734-44A9-854F-0F6AD3305182}|StreamService.Contracts\\StreamService.Contracts.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice.contracts\\videofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25DBDE8-0734-44A9-854F-0F6AD3305182}|StreamService.Contracts\\StreamService.Contracts.csproj|solutionrelative:streamservice.contracts\\videofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25DBDE8-0734-44A9-854F-0F6AD3305182}|StreamService.Contracts\\StreamService.Contracts.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice.contracts\\videocategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25DBDE8-0734-44A9-854F-0F6AD3305182}|StreamService.Contracts\\StreamService.Contracts.csproj|solutionrelative:streamservice.contracts\\videocategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C25DBDE8-0734-44A9-854F-0F6AD3305182}|StreamService.Contracts\\StreamService.Contracts.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice.contracts\\ivideoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C25DBDE8-0734-44A9-854F-0F6AD3305182}|StreamService.Contracts\\StreamService.Contracts.csproj|solutionrelative:streamservice.contracts\\ivideoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}|StreamService\\StreamService.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice\\streamservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}|StreamService\\StreamService.csproj|solutionrelative:streamservice\\streamservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11044261-1B5F-4B7B-9F42-49500D3F0381}|StreamService.Repository\\StreamService.Repository.csproj|c:\\pocs\\v2\\streamappv2\\api\\streamservice\\streamservice.repository\\migrations\\20240901192434_initialagain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11044261-1B5F-4B7B-9F42-49500D3F0381}|StreamService.Repository\\StreamService.Repository.csproj|solutionrelative:streamservice.repository\\migrations\\20240901192434_initialagain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901192347_InitialAgain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StreamService.Repository\\Migrations\\20240901192347_InitialAgain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901191045_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StreamService.Repository\\Migrations\\20240901191045_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901190843_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StreamService.Repository\\Migrations\\20240901190843_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +66,193 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IVideoService.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Contracts\\IVideoService.cs",
+              "RelativeDocumentMoniker": "StreamService.Contracts\\IVideoService.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Contracts\\IVideoService.cs",
+              "RelativeToolTip": "StreamService.Contracts\\IVideoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T19:29:59.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\Program.cs",
+              "RelativeDocumentMoniker": "StreamService\\Program.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\Program.cs",
+              "RelativeToolTip": "StreamService\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T17:22:02.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VideoService.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\VideoService.cs",
+              "RelativeDocumentMoniker": "StreamService.Repository\\VideoService.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\VideoService.cs",
+              "RelativeToolTip": "StreamService.Repository\\VideoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T20:49:23.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VideoFile.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Contracts\\VideoFile.cs",
+              "RelativeDocumentMoniker": "StreamService.Contracts\\VideoFile.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Contracts\\VideoFile.cs",
+              "RelativeToolTip": "StreamService.Contracts\\VideoFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T17:16:32.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VideoFile.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Entities\\VideoFile.cs",
+              "RelativeDocumentMoniker": "StreamService.Entities\\VideoFile.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Entities\\VideoFile.cs",
+              "RelativeToolTip": "StreamService.Entities\\VideoFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T19:17:46.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VideoCategory.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Contracts\\VideoCategory.cs",
+              "RelativeDocumentMoniker": "StreamService.Contracts\\VideoCategory.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Contracts\\VideoCategory.cs",
+              "RelativeToolTip": "StreamService.Contracts\\VideoCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T17:15:51.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StreamController.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\Controllers\\StreamController.cs",
+              "RelativeDocumentMoniker": "StreamService\\Controllers\\StreamController.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\Controllers\\StreamController.cs",
+              "RelativeToolTip": "StreamService\\Controllers\\StreamController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAkwDYAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T17:34:50.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StreamService.http",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\StreamService.http",
+              "RelativeDocumentMoniker": "StreamService\\StreamService.http",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService\\StreamService.http",
+              "RelativeToolTip": "StreamService\\StreamService.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-09-01T22:47:59.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceDbContext.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\ServiceDbContext.cs",
+              "RelativeDocumentMoniker": "StreamService.Repository\\ServiceDbContext.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\ServiceDbContext.cs",
+              "RelativeToolTip": "StreamService.Repository\\ServiceDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T22:48:45.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VideoCategory.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Entities\\VideoCategory.cs",
+              "RelativeDocumentMoniker": "StreamService.Entities\\VideoCategory.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Entities\\VideoCategory.cs",
+              "RelativeToolTip": "StreamService.Entities\\VideoCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T19:03:23.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240901192434_InitialAgain.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901192434_InitialAgain.cs",
+              "RelativeDocumentMoniker": "StreamService.Repository\\Migrations\\20240901192434_InitialAgain.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901192434_InitialAgain.cs",
+              "RelativeToolTip": "StreamService.Repository\\Migrations\\20240901192434_InitialAgain.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T19:24:34.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240901192347_InitialAgain.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901192347_InitialAgain.cs",
+              "RelativeDocumentMoniker": "StreamService.Repository\\Migrations\\20240901192347_InitialAgain.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901192347_InitialAgain.cs",
+              "RelativeToolTip": "StreamService.Repository\\Migrations\\20240901192347_InitialAgain.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T19:23:47.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240901191045_InitialCreate.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901191045_InitialCreate.cs",
+              "RelativeDocumentMoniker": "StreamService.Repository\\Migrations\\20240901191045_InitialCreate.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901191045_InitialCreate.cs",
+              "RelativeToolTip": "StreamService.Repository\\Migrations\\20240901191045_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T19:10:45.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240901190843_InitialCreate.cs",
+              "DocumentMoniker": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901190843_InitialCreate.cs",
+              "RelativeDocumentMoniker": "StreamService.Repository\\Migrations\\20240901190843_InitialCreate.cs",
+              "ToolTip": "C:\\POCs\\v2\\StreamAppV2\\API\\StreamService\\StreamService.Repository\\Migrations\\20240901190843_InitialCreate.cs",
+              "RelativeToolTip": "StreamService.Repository\\Migrations\\20240901190843_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T19:08:44.076Z",
+              "EditorCaption": ""
             }
           ]
         }

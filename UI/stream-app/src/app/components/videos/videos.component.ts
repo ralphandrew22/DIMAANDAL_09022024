@@ -35,4 +35,9 @@ export class VideosComponent implements OnInit {
     this.router.navigate(['/videos', videoId]);
   }
 
+  getVideoFileName(videoFileUrl: string) {
+    const videoFileName = videoFileUrl.split('\\videos\\').pop();
+    return videoFileName;
+  }
+
 }

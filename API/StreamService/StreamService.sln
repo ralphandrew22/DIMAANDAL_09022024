@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamService", "StreamService\StreamService.csproj", "{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamService", "StreamService\StreamService.csproj", "{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamService.Contracts", "StreamService.Contracts\StreamService.Contracts.csproj", "{C25DBDE8-0734-44A9-854F-0F6AD3305182}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamService.Repository", "StreamService.Repository\StreamService.Repository.csproj", "{11044261-1B5F-4B7B-9F42-49500D3F0381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamService.Entities", "StreamService.Entities\StreamService.Entities.csproj", "{B9634C7A-E925-4E94-A80E-C24A328E6012}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8A20093-5F58-42F1-B7EC-142C3CCABA0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25DBDE8-0734-44A9-854F-0F6AD3305182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25DBDE8-0734-44A9-854F-0F6AD3305182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25DBDE8-0734-44A9-854F-0F6AD3305182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25DBDE8-0734-44A9-854F-0F6AD3305182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11044261-1B5F-4B7B-9F42-49500D3F0381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11044261-1B5F-4B7B-9F42-49500D3F0381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11044261-1B5F-4B7B-9F42-49500D3F0381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11044261-1B5F-4B7B-9F42-49500D3F0381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9634C7A-E925-4E94-A80E-C24A328E6012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9634C7A-E925-4E94-A80E-C24A328E6012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9634C7A-E925-4E94-A80E-C24A328E6012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9634C7A-E925-4E94-A80E-C24A328E6012}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,23 @@
-<div class="row mt-5">
-    <div class="col-2"></div>
-    <div class="col-8">
-        <video title="{{currentVideo?.title}}" width="900" controls autoplay>
-            <source src="{{currentVideo?.videoUrl}}">
-        </video>
+<ng-container *ngIf="!!currentVideo; else unknownStream">
+    <div class="row mt-5">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <video title="{{currentVideo?.title}}" width="900" controls autoplay>
+                <source src="https://localhost:7229/api/Stream/File?fileName={{getVideoFileName(currentVideo?.videoFileUrl)}}">
+            </video>
+            <h3>{{currentVideo.title}}</h3>
+            <p>{{currentVideo.description}}</p>
+            <p>Category: {{currentVideo.videoCategory.category}}</p>
+        </div>
+        <div class="col-2"></div>
     </div>
-    <div class="col-2"></div>
-</div>
+</ng-container>
+<ng-template #unknownStream>
+    <div class="row mt-5">
+        <div class="col-2"></div>
+        <div class="col-8">
+            Loading video...
+        </div>
+        <div class="col-2"></div>
+    </div>
+</ng-template>

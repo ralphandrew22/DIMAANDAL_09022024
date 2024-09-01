@@ -1,23 +1,32 @@
-<div class="row">
-    <div class="col-2"></div>
-    <div class="col-8">
-        <div *ngFor="let video of videos">
-            <div class="row" (click)="navigateToVideo(video.id)">
-                <div class="col-6 align-self-center">
-                    <video title="{{video.title}}" width="256" height="256">
-                        <source src="{{video.videoUrl}}">
-                      Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="col-2"></div>
-                <div class="col-4 align-self-center">
-                    <h3>{{video.title}}</h3>
-                    <p>{{video.description}}</p>
-                    <p>Category: {{video.videoCategory.category}}</p>
+<ng-container *ngIf="videos.length > 0; else noVideos">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div *ngFor="let video of videos">
+                <div class="row" (click)="navigateToVideo(video.id)">
+                    <div class="col-6 align-self-center">
+                        <video title="{{video.title}}" width="256" height="256">
+                            <source src="https://localhost:7229/api/Stream/File?fileName={{getVideoFileName(video.videoFileUrl)}}">
+                        </video>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-4 align-self-center">
+                        <h3>{{video.title}}</h3>
+                        <p>{{video.description}}</p>
+                        <p>Category: {{video.videoCategory.category}}</p>
+                    </div>
                 </div>
             </div>
+            
         </div>
-        
+        <div class="col-2"></div>
     </div>
-    <div class="col-2"></div>
-</div>
+</ng-container>
+<ng-template #noVideos>
+    <div class="row">
+        <div class="col align-self-center">
+            <p>no videos :(</p>
+        </div>
+    </div>
+</ng-template>
+

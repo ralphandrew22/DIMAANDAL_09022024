@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Video } from '../../models/video';
 import { VideoService } from '../../services/video.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-stream',
@@ -16,9 +16,9 @@ export class StreamComponent implements OnInit {
 
   currentVideo?: Video;
 
-  constructor(private videoService: VideoService, private router: Router, private activatedRoute: ActivatedRoute) {
-
-  }
+  constructor(
+    private videoService: VideoService,
+    private activatedRoute: ActivatedRoute) { }
   
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe(paramMap => {
@@ -33,5 +33,10 @@ export class StreamComponent implements OnInit {
         );
       }
     });
+  }
+
+  getVideoFileName(videoFileUrl: string) {
+    const videoFileName = videoFileUrl.split('\\videos\\').pop();
+    return videoFileName;
   }
 }
