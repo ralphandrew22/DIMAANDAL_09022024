@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Video } from '../../models/video';
 import { VideoService } from '../../services/video.service';
 import { ActivatedRoute } from '@angular/router';
+import { catchError, throwError } from 'rxjs';
 
 @Component({
   selector: 'app-stream',
@@ -15,6 +16,7 @@ import { ActivatedRoute } from '@angular/router';
 export class StreamComponent implements OnInit {
 
   currentVideo?: Video;
+  errorMessage: string;
 
   constructor(
     private videoService: VideoService,
@@ -24,13 +26,20 @@ export class StreamComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(paramMap => {
       const videoId = paramMap.get('videoId');
       if (videoId) {
-        this.videoService.getVideo(+videoId).subscribe(
-          video => {
-            if (video) {
-              this.currentVideo = video;
+        this.videoService.getVideo(+videoId)
+          .pipe(
+            catchError(error => {
+              this.errorMessage = error.message;
+              return throwError(() => error);
+            })
+          )
+          .subscribe(
+            video => {
+              if (video) {
+                this.currentVideo = video;
+              }
             }
-          }
-        );
+          );
       }
     });
   }

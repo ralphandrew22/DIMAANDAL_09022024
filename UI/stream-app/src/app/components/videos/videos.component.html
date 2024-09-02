@@ -23,10 +23,19 @@
     </div>
 </ng-container>
 <ng-template #noVideos>
-    <div class="row">
-        <div class="col align-self-center">
-            <p>no videos :(</p>
+    <div class="row mt-3">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <!-- <p>Loading your videos...</p> -->
+             <ng-container *ngIf="errorMessage; else loadingVideosTemplate">
+                <p>An error occured while loading your videos.</p>
+                <p>{{errorMessage}}</p>
+             </ng-container>
+             <ng-template #loadingVideosTemplate>
+                <p>Loading your videos...</p>
+             </ng-template>
         </div>
+        <div class="col-2"></div>
     </div>
 </ng-template>
 

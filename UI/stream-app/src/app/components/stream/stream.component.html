@@ -16,7 +16,13 @@
     <div class="row mt-5">
         <div class="col-2"></div>
         <div class="col-8">
-            Loading video...
+            <ng-container *ngIf="!errorMessage; else errorMessageTemplate">
+                <p>Loading video...</p>
+            </ng-container>
+            <ng-template #errorMessageTemplate>
+                <p>An error occured while trying to play your video.</p>
+                <p>{{errorMessage}}</p>
+            </ng-template>
         </div>
         <div class="col-2"></div>
     </div>

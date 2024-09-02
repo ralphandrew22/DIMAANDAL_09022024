@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VideoService } from '../../services/video.service';
 import { Router } from '@angular/router';
+import { catchError, throwError } from 'rxjs';
 
 @Component({
   selector: 'app-upload',
@@ -23,6 +24,7 @@ export class UploadComponent implements OnInit {
       category: ''
     }
   };
+  errorMessage: string;
 
   constructor(private router: Router, private videoService: VideoService) { }
   
@@ -62,10 +64,18 @@ export class UploadComponent implements OnInit {
   }
 
   onUpload() {
-    this.videoService.uploadVideo(this.video).subscribe(
-      uploadedVideoId => {
-        this.router.navigate(['../videos', uploadedVideoId]);
-      }
-    );
+    this.errorMessage = '';
+    this.videoService.uploadVideo(this.video)
+      .pipe(
+        catchError(error => {
+          this.errorMessage = error.message;
+          return throwError(() => error);
+        })
+      )
+      .subscribe(
+        uploadedVideoId => {
+          this.router.navigate(['../videos', uploadedVideoId]);
+        }
+      );
   }
 }

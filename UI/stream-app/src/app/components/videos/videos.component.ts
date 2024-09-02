@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { Video } from '../../models/video';
 import { VideoService } from '../../services/video.service';
+import { catchError, throwError } from 'rxjs';
 
 @Component({
   selector: 'app-videos',
@@ -14,7 +15,7 @@ import { VideoService } from '../../services/video.service';
 })
 export class VideosComponent implements OnInit {
   videos: Video[] = [];
-  
+  errorMessage: string;
   
   constructor(
     private router: Router,
@@ -24,11 +25,18 @@ export class VideosComponent implements OnInit {
   }
 
   ngOnInit(): void {
-      this.videoService.getAllVideos().subscribe(
-        (videos: Video[]) => {
-          this.videos = videos;
-        }
-      );
+      this.videoService.getAllVideos()
+        .pipe(
+          catchError(error => {
+            this.errorMessage = error.message;
+            return throwError(() => error);
+          })
+        )
+        .subscribe(
+          (videos: Video[]) => {
+            this.videos = videos;
+          }
+        );
   }
 
   navigateToVideo(videoId: number) {
