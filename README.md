@@ -1,3 +1,4 @@
+
 # Create SQL Server and StreamService Database and tables
 
 1. Run init.ps1 from the root directory to create the SQL Server.
